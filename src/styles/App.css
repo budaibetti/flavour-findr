@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Dancing+Script:wght@400..700&display=swap");
+
+body {
+  background-color: rgba(41, 40, 41, 0.76);
+  width: auto;
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app-name {
+  position: relative;
+  top: -2vw;
+  left: -35vw;
+  font-family: "Dancing Script", cursive;
+  font-size: 2.3rem;
+  font-weight: 500;
+  text-shadow: 0 0 6px rgba(82, 68, 68, 0.822);
+  font-style: italic;
+  text-transform: none;
+  color: rgb(233, 114, 114);
+}
+
+.search {
+  position: relative;
+  top: 1.5rem;
+  margin-inline: auto;
+}
+.searchbar {
+  border-radius: 30px;
+  border: solid 0.5px rgba(245, 111, 140, 0.527);
+  min-width: 400px;
+  height: 1.5rem;
+  padding: 3px;
+  text-indent: 15px;
+  font-size: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+::placeholder {
+  font-size: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+.search-icon {
+  position: relative;
+  top: 0.5rem;
+  left: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  margin-inline: auto;
+}
+
+.strawberry-icon {
+  color: rgb(253, 201, 201);
+  font-size: 2rem;
+}
+
+.recommend {
+  position: relative;
+  top: 1rem;
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.7rem;
+  font-weight: 500;
+  font-style: italic;
+  color: rgb(255, 93, 93);
+}
+.random-meals-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 45px;
+  width: 540px;
+  max-width: 540px;
+}
+
+.meals {
+  background-color: rgb(250, 160, 160);
+  margin-bottom: 25px;
+  border-radius: 15px;
+  padding: 0.5rem;
+  width: 80%;
+  max-width: 540px;
+  text-align: center;
+  outline: none;
+}
+
+.meal-name {
+  font-size: 1.1rem;
+  width: 60%;
+  background-color: rgb(233, 203, 245);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  padding: 10px;
+  color: rgb(56, 37, 56);
+  text-shadow: 0 0 10px rgb(245, 237, 243);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.849);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.meal-thumb {
+  max-width: 60%;
+  max-height: 340px;
+  height: auto;
+  border-radius: 2px;
+  box-shadow: 0 0 5px black;
+  margin-bottom: 30px;
+  margin-top: -20px;
+}
+
+.searched-meal-thumb {
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+.searched-meal-recipe-btn {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.like-btn {
+  position: relative;
+  top: -3.5rem;
+  text-align: end;
+  font-size: 2.3rem;
+
+  background: transparent;
+  margin-right: 30px;
+  outline: none;
+}
+.searched-meal-like-btn {
+  top: 1.8rem;
+  margin-top: -15px;
+}
+
+.searched-meal-name {
+  margin-top: -20px;
+}
+.heart-btn {
+  background: none;
+  color: rgb(28, 21, 34);
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 0;
+}
+.heart-btn:hover {
+  color: rgb(255, 61, 119);
+}
+
+.like-btn-active {
+  color: rgb(28, 21, 34);
+  background: transparent;
+  padding: 0;
+}
+
+.recipe-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2px;
+}
+
+.recipe-arrow {
+  margin-top: 6px;
+  margin-left: 5px;
+  font-size: 1.2rem;
+}
+.ingredients-title,
+.instructions-title {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background-color: rgb(233, 203, 245);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  padding: 10px;
+  color: rgb(56, 37, 56);
+  background: rgb(231, 225, 225);
+  width: 50%;
+}
+
+.ingredients {
+  list-style: none;
+  font-size: 1rem;
+  color: rgb(20, 17, 20);
+  font-weight: 600;
+}
+
+.intstruction-details {
+  color: rgb(20, 17, 20);
+  padding: 45px;
+  text-align: justify;
+  font-weight: 600;
+  text-indent: 80px;
+}
